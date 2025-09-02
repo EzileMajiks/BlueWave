@@ -1,3 +1,11 @@
 main{
     background-color: darkgray;
 }
+/*Styling the navigation links*/
+header nav{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding: 15px;
+}
