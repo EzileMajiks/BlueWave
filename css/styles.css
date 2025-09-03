@@ -1,0 +1,23 @@
+/*Defining the decoration, typography, and the layout for BlueWave website*/
+main{
+    background-color: darkgray;
+}
+header nav{
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline overline;
+}
+footer{
+    background-color: gainsboro;
+}
+#paragraph{
+    text-align: center;
+}
