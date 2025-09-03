@@ -21,3 +21,22 @@ footer{
 #paragraph{
     text-align: center;
 }
+/*Styling the video*/
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cornsilk;
+    text-shadow: black;
+}
