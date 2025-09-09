@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /*Defining the decoration, typography, and the layout for BlueWave website*/
+header{
+    background-color: lightgray;
+}
 main{
     background-color: darkgray;
-}
-header nav{
-    text-align: center;
-    color: black;
-    font-family:'Times New Roman', Times, serif;
-
-
 }
 
 h2{
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline overline;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer{
     background-color: gainsboro;
 }
+
 h1{
     text-align: center;
     color:whitesmoke;
@@ -31,29 +30,139 @@ h1{
     font-style: italic;
 }
 /*Customizing the navigation*/
-header{
-    background-color:aquamarine;
-}
-header nav a{
+.nav-links {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: lightgrey;
 }
-header nav a{
-    display: inline;
-    padding: 20px;
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: large;
+    transition: background-color 0.3s, transform 0.2s;
 }
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
 /*Customizing the map*/
 .map{
     display: flex;
     justify-content: center;
 }
-/*Customize images for team members*/
-.team{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    width: 150px;
-    height: 100px;
+/* ===============================
+   Staff Section Card Layout
+   =============================== */
+
+/* Container holding all staff members */
+.staff-container {
+    display: flex;                /* Use flexbox for layout */
+    flex-wrap: wrap;              /* Allow wrapping to next line if needed */
+    justify-content: center;      /* Center align all staff cards */
+    gap: 20px;                    /* Space between each card */
+    padding: 20px;                /* Inner spacing around container */
+    background-color: #f9f9f9;    /* Light gray background */
+}
+
+/* Each staff member card */
+.staff-member {
+    background: #fff;                      /* White background for card look */
+    border-radius: 12px;                   /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 15px;                         /* Space inside card */
+    width: 200px;                          /* Fixed card width */
+    text-align: center;                    /* Center text and image */
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease;      /* Smooth hover animation */
+}
+
+/* Hover effect on staff cards */
+.staff-member:hover {
+    transform: translateY(-5px);           /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
+}
+
+/* Staff images */
+.staff-img {
+    width: 100%;                /* Fill the card width */
+    height: 200px;              /* Fixed height for consistency */
+    object-fit: cover;          /* Crop/fit image neatly */
+    border-radius: 10px;        /* Rounded image corners */
+    margin-bottom: 10px;        /* Space below image */
+}
+
+/* Staff member text (name + role) */
+.staff-member p {
+    font-size: 16px;            /* Readable text size */
+    font-weight: bold;          /* Make text stand out */
+    color: #333;                /* Dark gray text */
+    line-height: 1.4;           /* Spacing between lines */
+}
+
+
+/* =========================
+   Contact Form Card Styling
+   ========================= */
+
+/* Main card container */
+.contact-form {
+    max-width: 400px;              /* Limit form width */
+    margin: 40px auto;             /* Center form horizontally with top margin */
+    padding: 20px;                 /* Inner spacing */
+    background: #fff;              /* White background for card effect */
+    border-radius: 10px;           /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    font-family: Arial, sans-serif; /* Clean font */
+}
+
+/* Table styling inside form */
+.contact-form table {
+    width: 100%;                  /* Full width inside the card */
+    border-collapse: collapse;    /* Remove default table spacing */
+}
+
+/* Table cells (labels and inputs) */
+.contact-form td {
+    padding: 10px 5px;            /* Space between rows and columns */
+    vertical-align: top;          /* Align text at the top */
+    font-size: 14px;              /* Adjust text size */
+    color: #333;                /* Dark gray text color */
+}
+
+/* Input fields and textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;                  /* Make inputs fill available space */
+    padding: 8px;                 /* Inner spacing inside inputs */
+    border: 1px solid #ccc;       /* Light border */
+    border-radius: 6px;           /* Rounded input edges */
+    font-size: 14px;              /* Text size */
+    box-sizing: border-box;       /* Ensures padding doesn’t affect width */
+}
+
+/* Submit button */
+.contact-form input[type="submit"] {
+    padding: 10px 15px;           /* Button padding */
+    background: #007bff;          /* Blue background */
+    color: white;                 /* White text */
+    border: none;                 /* Remove default border */
+    border-radius: 6px;           /* Rounded button corners */
+    font-size: 15px;              /* Slightly larger text */
+    cursor: pointer;              /* Pointer on hover */
+    transition: background 0.3s ease; /* Smooth color change */
+}
+
+/* Submit button hover effect */
+.contact-form input[type="submit"]:hover {
+    background: #0056b3;          /* Darker blue on hover */
 }
