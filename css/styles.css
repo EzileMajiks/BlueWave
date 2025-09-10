@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*Basic Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 /*Defining the decoration, typography, and the layout for BlueWave website*/
 header{
     background-color: lightgray;
@@ -59,6 +67,7 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 /* ===============================
    Staff Section Card Layout
    =============================== */
@@ -87,7 +96,7 @@ h1{
 
 /* Hover effect on staff cards */
 .staff-member:hover {
-    transform: translateY(-5px);           /* Slight lift effect */
+    transform: translateY(10px);           /* Slight lift effect */
     box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
 }
 
@@ -115,7 +124,8 @@ h1{
 
 /* Main card container */
 .contact-form {
-    max-width: 400px;              /* Limit form width */
+    max-width: 600px;              /* Limit form width */
+    max-height: 400px;
     margin: 40px auto;             /* Center form horizontally with top margin */
     padding: 20px;                 /* Inner spacing */
     background: #fff;              /* White background for card effect */
