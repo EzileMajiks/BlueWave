@@ -16,21 +16,18 @@ Basic CSS styling
 
 File & Folder Structure
 
-    project-folder/
-    │
-    ├── index.html          # Homepage  
-    ├── about.html          # About page  
-    ├── contact.html        # Contact page  
+    BlueWave/
+    │__ Pages  
+    |    ├── about.html          # About page  
+    |    ├── contact.html        # Contact page  
     │
     ├── css/
-    │   └── styles.css      # Main stylesheet  
-    │
-    ├── js/
-    │   └── script.js       # Basic JavaScript  
+    │   └── styles.css           # Main stylesheet   
     │
     └── assets/
-        ├── images          # Images used in the site  
-
+    |     ├── images             # Images used in the site  
+    |
+    |__ index.html               #Home page (entry point)
 
 Installation / How to Run
 
