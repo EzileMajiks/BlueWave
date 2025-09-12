@@ -26,6 +26,7 @@ File & Folder Structure
     │
     └── assets/
     |     ├── images             # Images used in the site  
+    |     |__ Icons
     |
     |__ index.html               #Home page (entry point)
 
