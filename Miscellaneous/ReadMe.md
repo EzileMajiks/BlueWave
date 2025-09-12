@@ -11,7 +11,7 @@ Features
 
     Font Awesome icons integration
 
-Basic CSS styling
+    Basic CSS styling
 
 
 File & Folder Structure
