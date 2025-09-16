@@ -81,3 +81,8 @@ v1.1.0 – Latest Update (2025-09-26)
 
     REFERENCES
     W3Schools. (2025, September 12). W3Schools. Retrieved from W3Schools: https://www.w3schools.com/cssref/pr_class_cursor.php
+
+    Schools, W. (2025, September 16). W3 SCHOOLS. Retrieved from W3 SCHOOLS: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+    Jiks, S. (2025, September 17). Mr. (John, Interviewer)
+
