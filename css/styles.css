@@ -6,6 +6,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-size: 100%; /* Default scaling base */
 }
 /*Defining the decoration, typography, and the layout for BlueWave website*/
 header {
@@ -17,7 +18,7 @@ header {
 }
 
 header img {
-      max-width: 150px;
+      max-width: 150px;/*10rem for flexible logo size*/
       height: auto;
 }
 main{
@@ -40,7 +41,7 @@ h1{
     color:whitesmoke;
     text-decoration: solid;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: larger;
+    font-size: larger; /*1.5rem responsive heading*/
 }
 #myParagraph{
     text-align: center;
@@ -261,7 +262,7 @@ h1{
 }
 /* Default paragraph styling */
 .responsive-text {
-  font-size: 16px;        /* Normal size on larger screens */
+  font-size: 1rem;        /* Normal size on larger screens */
   line-height: 1.5;       /* Good readability */
   word-wrap: break-word;  /* Prevents long words from overflowing */
 }
