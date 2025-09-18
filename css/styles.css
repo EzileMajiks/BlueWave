@@ -199,40 +199,47 @@ h1{
     transition: color 0.3s;
 }
 
-/*Styling the hamburger navigation*/
-.hamburger{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    z-index: 1001;
+/* ================================
+   Hamburger Button (Three Lines)
+   ================================ */
+.hamburger {
+  display: none;                /* Hidden by default (only shown on small screens via media query) */
+  flex-direction: column;       /* Stack the three spans vertically */
+  cursor: pointer;              /* Show pointer cursor on hover for interactivity */
+  z-index: 1001;                /* Keep the hamburger above the nav menu so it’s always clickable */
 }
 
-.hamburger span{
-    height: 3px;
-    width: 20px;
-    background: white;
-    margin: 4px 0;
-    border-radius: 5px;
-    transition: all 0.4s ease;
+.hamburger span {
+  height: 3px;                  /* Thickness of each line */
+  width: 25px;                  /* Length of each line */
+  background: white;            /* Line color (white matches the dark header background) */
+  margin: 4px 0;                /* Spacing between the lines */
+  border-radius: 5px;           /* Rounded edges for a smoother look */
+  transition: all 0.4s ease;    /* Smooth animation when transforming into an “X” */
 }
 
-/*Responsive design rules*/
-@media (max-width: 768px){
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        background-color: darkblue;
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        width: 200px;
-        border-radius: 8px;
-        padding: 15px;
-    }
-    .nav-links{
-        display: flex;
-    }
-    .hamburger{
-        display: flex;
-    }
+/* ================================
+   Responsive Design (Small Screens)
+   ================================ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;              /* Hide nav links by default on small screens */
+    flex-direction: column;     /* Stack links vertically instead of horizontally */
+    background-color: #0a3d62;  /* Same background color as header for consistency */
+    position: absolute;         /* Position it absolutely so it can overlay below header */
+    top: 80px;                  /* Drop the menu below the header */
+    right: 20px;                /* Align menu to the right edge */
+    width: 200px;               /* Fixed width for the dropdown */
+    border-radius: 8px;         /* Rounded corners for modern look */
+    padding: 15px;              /* Add space inside menu around links */
+  }
+
+  .nav-links.active {
+    display: flex;              /* When active (toggled via JS), show nav as a dropdown */
+  }
+
+  .hamburger {
+    display: flex;              /* Show hamburger button on screens 768px or smaller */
+  }
 }
+
