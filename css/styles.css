@@ -244,36 +244,4 @@ h1{
   }
 }
 
-/* Default styling for video */
-.vid {
-  width: 100%;       /* Full width of parent container */
-  height: auto;      /* Keep aspect ratio */
-  display: flex;    
-  justify-content: center;
-  align-items: center;
-}
-
-/* Apply changes only on small devices (max-width 600px) */
-@media (max-width: 768px) {
-  .vid {
-    width: 100%;     /* Ensure it fills the screen */
-    max-height: 250px; /* Optional: limit height for small screens */
-  }
-}
-/* Default paragraph styling */
-.responsive-text {
-  font-size: 1rem;        /* Normal size on larger screens */
-  line-height: 1.5;       /* Good readability */
-  word-wrap: break-word;  /* Prevents long words from overflowing */
-}
-
-/* Adjust text for small screens */
-@media (max-width: 768px) {
-  .responsive-text {
-    font-size: 14px;   /* Slightly smaller text */
-    line-height: 1.4;  /* Adjust spacing */
-    text-align: justify; /* Optional: make it look neat */
-  }
-}
-
 
