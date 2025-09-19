@@ -243,5 +243,31 @@ h1{
     display: flex;              /* Show hamburger button on screens 768px or smaller */
   }
 }
-
-
+/*Default styling for the video*/
+.vid{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Apply the layout for smaller devices*/
+@media(max-width: 768px){
+    .vid{
+        width: 100%;
+        max-height: 15.625rem;
+    }
+}
+/*Default styling for the paragraph*/
+.responsive-text{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/*Apply the paragraph layout for smaller devices*/
+@media(max-height: 768px){
+    .responsive-text{
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+}
