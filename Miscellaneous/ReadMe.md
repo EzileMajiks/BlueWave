@@ -58,7 +58,7 @@ Author
 
 Sir Jiks
 
-Changelog
+##Changelog
 v1.0.0 – Initial Release (2025-08-27)
 
     Added homepage (index.html)
@@ -78,8 +78,12 @@ v1.1.0 – Latest Update (2025-09-26)
 
     Added responsive CSS styling
 
+SEE WEBSITE RESPONSIVE DESIGN SNIPPETS:
+./Assets/image320px
+./Assets/image678px
 
-    REFERENCES
+
+REFERENCES
     W3Schools. (2025, September 12). W3Schools. Retrieved from W3Schools: https://www.w3schools.com/cssref/pr_class_cursor.php
 
     Schools, W. (2025, September 16). W3 SCHOOLS. Retrieved from W3 SCHOOLS: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
