@@ -57,6 +57,7 @@ Usage Instructions
 Author
 
 Sir Jiks
+## Improvements from part 2 feedbaCK
 
 ## Changelog
 v1.0.0 – Initial Release (2025-08-27)
