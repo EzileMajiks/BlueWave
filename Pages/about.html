@@ -23,7 +23,8 @@
     </header>
     <main>
         <section>
-            <h2>Backgroung</h2>
+            <button class="accordion">Background</button>
+            <div class="panel">
             <p>
                 Founded with a passion for creativity and technology, 
                 BlueWave was built to help brands thrive in the digital era. 
@@ -33,21 +34,30 @@
                 we’ve been empowering startups, SMEs, and established companies to grow, connect, 
                 and succeed online.
             </p>
-            <h2>Our Mission</h2>
-            <p>
+            </div>
+            
+            <button class="accordion">Our Mission</button>
+            <div class="panel">
+                <p>
                 Our mission is simple: to create impactful digital experiences that drive growth, 
                 build meaningful connections, and inspire audiences. We blend creativity, data, 
                 and technology to craft solutions that not only look good but also deliver measurable results.
-            </p>
-            <h2>Our Vision</h2>
-            <p>
+                </p>
+            </div>
+            
+            <button class="accordion">Our Vision</button>
+            <div class="panel">
+                <p>
                 We envision a future where businesses of all sizes can harness the full potential 
                 of digital tools to compete, innovate, and connect globally. 
                 Our vision is to become a trusted partner for forward-thinking brands—helping them adapt, 
                 scale, and stay ahead in an ever-changing digital landscape.
-            </p>
-            <h2>Meet the Team</h2>
-            <div class="staff-container">
+                </p>
+            </div>
+            
+            <button class="accordion">Meet Our Team</button>
+            <div class="panel">
+               <div class="staff-container">
                 <div class="staff-member">
                     <img src="../Assets/Member6.jpg" alt="Jane Doe" class="staff-img">
                     <p>Luyanda Mthembu<br>Designers Lead</p>
@@ -67,6 +77,11 @@
                     <img src="../Assets/Member3.jpg" alt="John Smith" class="staff-img">
                     <p>Siphokazi Ngema<br>Marketing Lead</p>
                 </div> 
+
+                <div id="lightbox"><img id="lightboxImage" src=""></div>
+            </div>
+            
+            
             </div>
            
             <p>
@@ -100,6 +115,26 @@
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active'); // animate hamburger
             });
+
+            //Adding accordion buttons
+            const acc = document.querySelectorAll(".accordion");
+            acc.forEach(button => {
+                button.addEventListener("click", () => {
+                const panel = button.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+                });
+            });
+
+            //Adding Image LightBox
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightboxImage");
+            document.querySelectorAll(".staff-img").forEach(img => {
+            img.addEventListener("click", () => {
+                lightboxImg.src = img.src.replace("100", "600");
+                lightbox.style.display = "flex";
+            });
+            });
+            lightbox.addEventListener("click", () => lightbox.style.display = "none");
     </script>
 </body>
 </html>

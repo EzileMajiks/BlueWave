@@ -271,3 +271,40 @@ h1{
         text-align: justify;
     }
 }
+
+/*Styling the accordins*/
+.accordion {
+      background-color: #eee;
+      cursor: pointer;
+      padding: 14px;
+      border: none;
+      width: 100%;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+    .accordion:hover {
+      background-color: #ccc;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+}
+
+/*Styling the Image LightBox*/
+.staff-img {
+      width: 100px; cursor: pointer; margin: 10px;
+    }
+    #lightbox {
+      display: none;
+      position: fixed;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    #lightbox img {
+      width: 60%;
+}
