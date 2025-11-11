@@ -57,7 +57,6 @@ Usage Instructions
 Author
 
 Sir Jiks
-## Improvements from part 2 feedbaCK
 
 ## Changelog
 v1.0.0 – Initial Release (2025-08-27)
@@ -83,6 +82,20 @@ SEE WEBSITE RESPONSIVE DESIGN SNIPPETS:
 ./Assets/image320px
 ./Assets/image678px
 
+## Improvements from part 2 feedbaCK
+No recommendations!!!
+## PART3 CHANGELOG
+Implemented javascript interactive accordion buttons on the "about" page for the (Background, Mission, Vision, Our Team) content.
+Implemented a google interactive map in the 'contact' page.
+Added a gallery lightbox for the images in the about page for an improved user experience.
+Added a realtime date stamp in the home page header section for.
+Added a timestamp (dynamic) in the footer sections of the contact & about pages for a good user experience.
+Customized the layout of the dynamic content in the css file.
+Added javascript form input validation rules in the contact form.
+Added a feedback alert box for the form submission.
+Inserted the email recipient processing functionality for the contact form.
+
+
 
 ## REFERENCES
     W3Schools. (2025, September 12). W3Schools. Retrieved from W3Schools: https://www.w3schools.com/cssref/pr_class_cursor.php
@@ -90,4 +103,6 @@ SEE WEBSITE RESPONSIVE DESIGN SNIPPETS:
     Schools, W. (2025, September 16). W3 SCHOOLS. Retrieved from W3 SCHOOLS: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 
     Jiks, S. (2025, September 17). Mr. (John, Interviewer)
+
+
 
