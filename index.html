@@ -23,6 +23,7 @@
             </div>
         </header>
         <main>
+            <div id="datestamp"></div>
             <h1>BLUE WAVE DIGITAL AGENCY</h1>
             <div class="responsive-text">
                 <p>
@@ -69,6 +70,17 @@
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active'); // animate hamburger
             });
+
+            //DATE STAMP
+                function displayDate() {
+                const today = new Date();
+
+                const dateStr = today.toDateString(); // e.g., 'Fri Oct 11 2024'
+
+                document.getElementById("datestamp").innerHTML = `Today's Date: ${dateStr}`;
+            }
+
+                displayDate();
         </script>
     </body>
 </html>
