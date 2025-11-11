@@ -105,33 +105,31 @@
             });
 
             //Form Input validation
-            function validateForm(){
-            const name = document.getElementById('name').value.trim();
-            const surname = document.getElementById('surname').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value;
-            const errorMessage = document.getElementById('errorMessage');
-            
-            errorMessage.textContent = '';
-            //validate input fields
-            if(name === '' || email === '' || surname === '' || message === ''){
-                errorMessage.textContent = 'All input fields are required!!!';
-                //alert("All input fields are required!!!");
-                return false;
+            const form = document.getElementById('enquiryForm');
+            const successMsg = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual submission
+
+            // Simple form validation
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const message = form.message.value.trim();
+            const type = form.querySelector('input[name="type"]:checked');
+
+            if (!type) {
+                alert("Please select an enquiry type.");
+                return;
+            }
+            if (!name || !email || !message) {
+                alert("Please fill in all required fields.");
+                return;
             }
 
-            //validate email
-            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-            if(!email.match(emailPattern)){
-                errorMessage.textContent = 'Incorrect email format!!!';
-                //alert("Incorrect email format!!!");
-                return false;
-            }
-
-            alert("Your form was submitted successfully!!!");
-            return true;
-        }
-        
+            // Show success message and clear form
+            successMsg.style.display = 'block';
+            form.reset();
+            });
 
             //Inserting TimeStamp (Dynamic content)
             function displayTime() {
