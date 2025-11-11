@@ -182,6 +182,11 @@ h1{
     transition: background 0.3s ease; /* Smooth color change */
 }
 
+.error{
+    color: red;
+    font-size: 16px;
+}
+
 /* Submit button hover effect */
 .contact-form input[type="submit"]:hover {
     background: #0056b3;          /* Darker blue on hover */

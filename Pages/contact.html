@@ -6,6 +6,7 @@
     <title>Contact Us - BlueWave Digital Agency</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
     <body>
         <header>
@@ -49,30 +50,43 @@
                 </iframe>
             </section>
             <section>
-                <h1>Enquiries</h1>
-                <form action="" method="post" class="contact-form">
+                <br/><br/>
+                <h1>Get In Touch With Us:</h1>
+                <form action="mailto: ezilemajikijela94@gmail.com" method="post" class="contact-form" onsubmit="return validateForm()">
                     <table>
                         <tr>
                             <td width="150">Name:</td>
-                            <td><input type="text" name="name" placeholder="Enter your name" required></td>
+                            <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                        </tr>
+                        <tr>
+                            <td width="150">Surname:</td>
+                            <td><input type="text" name="surname" id="surname" placeholder="Enter your surname"></td>
                         </tr>
                         <tr>
                             <td width="150">Email:</td>
-                            <td><input type="email" name="email" placeholder="Enter your email" required></td>
+                            <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
                         </tr>
                         <tr>
                             <td width="150">Message:</td>
                             <td>
-                                <textarea cols="25" rows="5" required></textarea>
+                                <textarea cols="25" rows="5" id="message"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td width="150"></td>
-                            <td><input type="submit" name="button" value="Submit"></td>
+                            <td>
+                                <p class="error" id="errorMessage"></p>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="150"></td>
+                            <td><input type="submit" name="submit" value="Send Email"></td>
                         </tr>
                     </table>
                 </form>
             </section>
+            <br/><br/>
         </main>
         <footer>
             <p>This website (www.bluewave.com) is copyright protected by the laws of South Africa and the rest of the African Countries represented on this website and by International Treaties. 
@@ -90,6 +104,7 @@
             <p id="myParagraph">&copy; 2025 BlueWave Digital Agency.</p>
         </footer>
         <script>
+            //Activate Hamburger Navigation
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
 
@@ -97,6 +112,35 @@
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active'); // animate hamburger
             });
+
+            //Form Input validation
+            function validateForm(){
+            const name = document.getElementById('name').value.trim();
+            const surname = document.getElementById('surname').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value;
+            const errorMessage = document.getElementById('errorMessage');
+            
+            errorMessage.textContent = '';
+            //validate input fields
+            if(name === '' || email === '' || surname === '' || message === ''){
+                errorMessage.textContent = 'All input fields are required!!!';
+                //alert("All input fields are required!!!");
+                return false;
+            }
+
+            //validate email
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+            if(!email.match(emailPattern)){
+                errorMessage.textContent = 'Incorrect email format!!!';
+                //alert("Incorrect email format!!!");
+                return false;
+            }
+
+            alert("Your form was submitted successfully!!!");
+            return true;
+        }
+            
         </script>
     </body>
 </html>
