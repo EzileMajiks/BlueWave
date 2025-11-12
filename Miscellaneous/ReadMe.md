@@ -1,7 +1,7 @@
 This is a simple static website built using HTML, CSS, and JavaScript.
 It demonstrates basic web structure, styling, and interactivity for learning and practice purposes.
 
-Features
+## Features
 
     Responsive layout for desktop and mobile
 
@@ -14,7 +14,7 @@ Features
     Basic CSS styling
 
 
-File & Folder Structure
+## File & Folder Structure
 
     BlueWave/
     │__ Pages  
@@ -30,7 +30,7 @@ File & Folder Structure
     |
     |__ index.html               #Home page (entry point)
 
-Installation / How to Run
+## Installation / How to Run
 
     Download or clone this repository.
 
@@ -38,7 +38,7 @@ Installation / How to Run
 
     No server setup is required (static website).
 
-Dependencies
+## Dependencies
 
     Font Awesome
     – for icons
@@ -59,45 +59,45 @@ Author
 Sir Jiks
 
 ## Changelog
-v1.0.0 – Initial Release (2025-08-27)
+    v1.0.0 – Initial Release (2025-08-27)
 
-    Added homepage (index.html)
+        Added homepage (index.html)
 
-    Created, "About Us" and "Contact" pages
+        Created, "About Us" and "Contact" pages
 
-    Added navigation bar and footer
+        Added navigation bar and footer
 
-    
+        
 
-v1.1.0 – Latest Update (2025-09-26)
-    Added css for decoration, layout, and typography
+    v1.1.0 – Latest Update (2025-09-26)
+        Added css for decoration, layout, and typography
 
-    Improved mobile responsiveness
+        Improved mobile responsiveness
 
-    Integrated Font Awesome icons
+        Integrated Font Awesome icons
 
-    Added responsive CSS styling
+        Added responsive CSS styling
 
-SEE WEBSITE RESPONSIVE DESIGN SNIPPETS:
-./Assets/image320px
-./Assets/image678px
+    SEE WEBSITE RESPONSIVE DESIGN SNIPPETS:
+    ./Assets/image320px
+    ./Assets/image678px
 
 ## Improvements from part 2 feedbaCK
-No recommendations!!!
+    No recommendations!!!
 ## PART3 CHANGELOG
-Implemented javascript interactive accordion buttons on the "about" page for the (Background, Mission, Vision, Our Team) content.
-Implemented a google interactive map in the 'contact' page.
-Added a gallery lightbox for the images in the about page for an improved user experience.
-Added a realtime date stamp in the home page header section for.
-Added a timestamp (dynamic) in the footer sections of the contact & about pages for a good user experience.
-Customized the layout of the dynamic content in the css file.
-Added javascript form input validation rules in the contact form.
-Added a feedback alert box for the form submission.
-Inserted the email recipient processing functionality for the contact form.
-Created the enquiry page with the inquiry form.
-Added javascript form validation rules for the user input.
-Added a feedback functionality for the form submission.
-Applied a proper css layout for the enquiry form.
+    Implemented javascript interactive accordion buttons on the "about" page for the (Background, Mission, Vision, Our Team) content.
+    Implemented a google interactive map in the 'contact' page.
+    Added a gallery lightbox for the images in the about page for an improved user experience.
+    Added a realtime date stamp in the home page header section for.
+    Added a timestamp (dynamic) in the footer sections of the contact & about pages for a good user experience.
+    Customized the layout of the dynamic content in the css file.
+    Added javascript form input validation rules in the contact form.
+    Added a feedback alert box for the form submission.
+    Inserted the email recipient processing functionality for the contact form.
+    Created the enquiry page with the inquiry form.
+    Added javascript form validation rules for the user input.
+    Added a feedback functionality for the form submission.
+    Applied a proper css layout for the enquiry form.
 
 
 ## REFERENCES
