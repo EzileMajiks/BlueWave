@@ -94,7 +94,10 @@ Customized the layout of the dynamic content in the css file.
 Added javascript form input validation rules in the contact form.
 Added a feedback alert box for the form submission.
 Inserted the email recipient processing functionality for the contact form.
-
+Created the enquiry page with the inquiry form.
+Added javascript form validation rules for the user input.
+Added a feedback functionality for the form submission.
+Applied a proper css layout for the enquiry form.
 
 
 ## REFERENCES
