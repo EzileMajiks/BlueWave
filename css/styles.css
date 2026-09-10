@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&effect=neon|outline|emboss|shadow-multiple:wght@300&display=swap');
 
 /*Basic Reset*/
 * {
@@ -29,8 +29,14 @@ h2{
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline overline;
-    color: whitesmoke;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(245, 245, 245);
+    font-family: "Sofia", sans-serif;
+
+    text-shadow:
+        0 0 5px #1100ff,
+        0 0 10px #c300ff,
+        0 0 20px #00aaff,
+        0 0 40px #0091ff;
 }
 footer{
     background-color: #0a3d62;
@@ -38,10 +44,16 @@ footer{
 
 h1{
     text-align: center;
-    color:whitesmoke;
+    color:rgb(245, 245, 245);
     text-decoration: solid;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: larger; /*1.5rem responsive heading*/
+
+    text-shadow:
+        0 0 5px #1100ff,
+        0 0 10px #c300ff,
+        0 0 20px #00aaff,
+        0 0 40px #0091ff;
 }
 #myParagraph{
     text-align: center;
